@@ -20,7 +20,11 @@ bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so 
    - phrases
    - words
    - syllables 
-   - characters 
+   - characters
+  - filter out stopwords
+   - punctuation
+   - particles
+   - other words (what are these?)
    
 - **being able to establish grams**
   - character-level
