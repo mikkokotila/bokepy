@@ -30,5 +30,5 @@ bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so 
   - sentence-level
   
 - **being able to create frequency tables**
- - at any entity level (e.g. syllable frequency)
- - with simple summaries for % share of buckets (e.g. 100 most common account for 12% of all in a set)
+  - at any entity level (e.g. syllable frequency)
+  - with simple summaries for % share of buckets (e.g. 100 most common account for 12% of all in a set)
