@@ -1,6 +1,6 @@
-# bopy
+# bokepy
 
-bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so together böke means Tibetan Language. bopy is a shorthand for boke and python, and is a Tibetan Language Processing Library
+bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so together böke means Tibetan Language. bokepy is a shorthand for boke and python, and is a Tibetan Language Processing Library built for handling the most common language processing tasks in a straighforward way. 
 
 ## Requirements
 
