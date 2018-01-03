@@ -2,7 +2,7 @@
 
 bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so together böke means Tibetan Language. bokepy is a shorthand for boke and python, and is a Tibetan Language Processing Library built for handling the most common language processing tasks in a straighforward way. 
 
-## Requirements
+## Requirements (Foundational Feature Set)
 
 - **being able to ingest text**
   - as raw text
