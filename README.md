@@ -8,6 +8,15 @@ bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so 
   - as raw text
   - as a list of entities 
   - as a frequency list with counts
+  - in variety of file formats:
+   - .txt
+   - .csv
+   - .doc
+   - .xls
+   - .pdf (later)
+   - .sql (later)
+   - other formats (which?)
+  - handling unicode properly is a must! 
   
 - **being able to clean text**
   - remove non-Tibetan entities
@@ -36,3 +45,14 @@ bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so 
 - **being able to create frequency tables**
   - at any entity level (e.g. syllable frequency)
   - with simple summaries for % share of buckets (e.g. 100 most common account for 12% of all in a set)
+  
+- **being able to draw out plots**
+  - word clouds 
+  - bar charts 
+  - heatmaps
+  
+- **being able to output to files**
+  - .csv
+  - .txt
+  - .msgpack
+  - .sql (later)
