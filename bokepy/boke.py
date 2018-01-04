@@ -27,18 +27,68 @@ stopwords = ["འི་", "གི་", "ཀྱི་", "གྱི་", "ཡི�
 latins_re = r'[A-Z]|[a-z]|[0-9]|[\\$%&\'()*+,./:;<=>?@^_`[\]{}~]'
 
 
-def ingest_text(filename):
+def ingest_text(filename, mode='blob'):
 
-    out = open(filename).read()
+    if mode is not "blob":
+        out = open(filename).readlines()
+    else:
+        out = open(filename).read()
+
+    return out
+
+
+def export(data, name='default', export_format='to_csv'):
+
+    '''
+    WHAT
+    ----
+    Takes data and exports it to a file on local drive. Note that
+    saving will take place automatically on present working directory
+    and any file with same name will be automatically overwritten.
+
+    PARAMS
+    ------
+    data: data in a list or dataframe or series
+    export_to: to_html, to_json, to_csv, to_excel, to_latex,
+               to_msgpack, to_sql, to_clipboard
+    '''
+    temp = data
+
+    if name is 'default':
+        file_type = export_format.split('_')[1]
+        name = 'export_from_boke.' + file_type
+
+    method_to_call = find_method(temp, export_format)
+    method_to_call(name)
+
+
+def type_convert(data):
+
+    temp = data
+
+    if isinstance(temp, pd.core.frame.DataFrame) is False:
+        temp = pd.DataFrame(temp)
+        temp = temp.set_index(temp.columns[0])
+
+    return temp
+
+
+def remove_latins(data):
+
+    temp = type_convert(data)
+
+    out = temp[temp.index.str.contains(latins_re) == False]
 
     return out
 
 
-def remove_garbage(data):
+def find_method(data, function):
 
-    out = data[data.index.str.contains(latins_re) == False]
+    temp = type_convert(data)
 
-    return out
+    method_to_call = getattr(temp, function)
+
+    return method_to_call
 
 
 def show_garbage(data):
