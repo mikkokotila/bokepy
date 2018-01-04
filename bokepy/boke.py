@@ -4,6 +4,8 @@ import pandas as pd
 import re
 from pytib import Segment
 from grapheme import graphemes
+from grapheme import length
+
 
 '''
 NLP stuffs take time to do. So have patience.
@@ -91,9 +93,11 @@ def find_method(data, function):
     return method_to_call
 
 
-def show_garbage(data):
+def show_latins(data):
 
-    return data[data.index.str.contains(latins_re) == True]
+    temp = type_convert(data)
+
+    return temp[temp.index.str.contains(latins_re) == True]
 
 
 def create_meta(data):
@@ -103,13 +107,16 @@ def create_meta(data):
     '''
 
     # new[~new.index.isin(particles)]
-    out = data
-    out['stopword'] = data.index.str.isin(stopwords)
-    out['length'] = data.index.str.len()
-    out['sentence_ending'] = data.index.str.contains('་') == False
-    out['sentence_ending'] = out['sentence_ending'].astype(int)
+    temp = data
+    temp = temp.reset_index()
+    temp.columns = ['text', 'count']
+    temp['chars'] = temp.text.apply(length)
+    temp['bytes'] = temp.text.str.len()
+    temp['sentence_ending'] = temp.text.str.contains('་') == False
+    temp['sentence_ending'] = temp['sentence_ending'].astype(int)
+    temp['stopword'] = temp.text.isin(stopwords)
 
-    return out
+    return temp
 
 
 def text_to_chars(text):
@@ -137,15 +144,22 @@ def text_to_syllables(text):
     return out
 
 
-def text_to_words(text):
+def text_to_words(text, mode='list'):
+
+    '''
+    OPTIONS
+    -------
+    mode: either 'list' or 'whitespaces'
+    '''
 
     temp = re.sub(sent_punct_re, "", text)
 
     seg = Segment()
     temp = seg.segment(temp)
-    out = temp.split()
+    if mode is 'list':
+        temp = temp.split()
 
-    return out
+    return temp
 
 
 def text_to_sentence(text):
@@ -207,6 +221,7 @@ def syllable_counts(syllable_list):
 
     return out
 
+
 def share_by_order(data):
 
     '''
@@ -217,6 +232,8 @@ def share_by_order(data):
     total = data['counts'].sum()
     print("Total syllable pairs : %d \n" % total)
 
-    for i in [10,100,1000,10000,100000]:
+    orders = [10, 100, 1000, 10000, 100000]
+
+    for i in orders:
         share = data['counts'][:i].sum() / total.astype(float) * 100
         print(("TOP %d : %.2f%%") % (i, share))

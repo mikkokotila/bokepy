@@ -1,6 +1,6 @@
 # bokepy
 
-bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so together böke means Tibetan Language. bokepy is a shorthand for boke and python, and is a Tibetan Language Processing Library built for handling the most common language processing tasks in a straightforward way.
+bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so together böke means Tibetan Language. bokepy is a shorthand for boke and python, and is a Tibetan Language Processing Library built for handling the most common language processing tasks in a straightforward way. Bokepy is built from the ground up to facilitate for a wide range of research challenges, including those far beyond the scope of typical scholarly interest. This includes rapid testing of ideas and prototyping of completely new technology solutions.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ bö (tib. བོད་) means Tibet, and ke (tib. སྐད) means language, so 
 #### 2. Requirements
 #### 3. About the Design Paradigm
 #### 4. Roadmap
+#### 5. References
 
 ## 1. About This Document
 
@@ -99,6 +100,7 @@ Roughly speaking the roadmap is broken in to 4 stages (at least for now):
   - Data cleaning
   - Tokenization / segmentation
   - Frequency tables
+  - Access to common language resources (corpora etc.)
 2) Common Statistical Functionality
   - (n)gram creation
   - word frequency table creation
@@ -111,7 +113,8 @@ Roughly speaking the roadmap is broken in to 4 stages (at least for now):
   - Entity recognition
   - Accuracy / quality assessment
 4) Extraordinary Statistical Capabilities
-  - It takes a long journey to know the horse's strength...
+  - Integrate with Keras (LSTM etc.)
+  - Let's see what more...it takes a long journey to know the horse's strength.
 
 ## 5. References
 
