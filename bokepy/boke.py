@@ -155,7 +155,7 @@ def text_to_words(text, mode='list'):
     temp = re.sub(sent_punct_re, "", text)
 
     seg = Segment()
-    temp = seg.segment(temp)
+    temp = seg.segment(temp, uknown=0)
     if mode is 'list':
         temp = temp.split()
 
