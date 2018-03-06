@@ -48,8 +48,5 @@ https://www.himalayanart.org/
 #### Collection of English Dharma books
 http://promienie.net/
 
-#### Almost 20 dictionary files 
+#### Collection of Dictionaries
 http://www.buddism.ru///___DICTIONARIES/
-
-
-
