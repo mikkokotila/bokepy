@@ -1,46 +1,55 @@
 ## Text Databases
 
-### The entire Rinchen Terdzo
+#### The entire Rinchen Terdzo
 http://rtz.tsadra.org/index.php/Main_Page
 
-### A Collection of Text from More than 100 Authors 
+#### A Collection of Text from More than 100 Authors 
 http://www.lotsawahouse.org/bo/free-translations-tibetan-buddhist-texts
 
-## Degé edition of the Kangyur and Tengyur
+#### Degé edition of the Kangyur and Tengyur
 http://www.thlib.org/encyclopedias/literary/canons/
 
-### Kangyur Translation Project 
+#### Kangyur Translation Project 
 http://84000.co/
 
-### Buddhist Digital Resource Center
+#### Buddhist Digital Resource Center
 https://www.tbrc.org/
 
-### Old Tibetan Documents Online
+#### Old Tibetan Documents Online
 http://otdo.aa-ken.jp/
 
-### Timeless Treasuries
+#### Timeless Treasuries
 http://dharmacloud.tsadra.org/library/
 
-### Dharma Text Repository
+#### Dharma Text Repository
 http://rywikitexts.tsadra.org/
+
+#### Buddhism Library Project
+http://www.buddism.ru/___DHARMA___/
+
 
 ## Other Resources
 
-### The Buddhist Canon Research Database
+#### The Buddhist Canon Research Database
 http://databases.aibs.columbia.edu/?sub=about
 
-### Treasury of Lives 
+#### Treasury of Lives 
 https://treasuryoflives.org
 
-### Rigpa Wiki
+#### Rigpa Wiki
 http://rigpawiki.org/
 
-### Ranjung Yeshe Wiki
+#### Ranjung Yeshe Wiki
 http://rywiki.tsadra.org/
 
-### Himalayan Art
+#### Himalayan Art
 https://www.himalayanart.org/
 
-### Collection of English Dharma books
+#### Collection of English Dharma books
 http://promienie.net/
+
+#### Almost 20 dictionary files 
+http://www.buddism.ru///___DICTIONARIES/
+
+
 
